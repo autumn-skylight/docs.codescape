@@ -1,0 +1,249 @@
+* {
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.removed {
+  color: rgb(255, 181, 181);
+}
+
+.added {
+  color: rgb(181, 255, 181);
+}
+
+.fixed {
+  color: rgb(255, 235, 181);
+}
+
+.amended {
+  color: rgb(229, 255, 181);
+}
+
+.issues {
+  color: rgb(255, 181, 233);
+}
+
+.renamed {
+  color: rgb(209, 181, 255);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.a_link {
+  color: rgba(184, 181, 181, 0.557);
+  text-decoration: none;
+  font-size: 1em;
+}
+.a_link_dev {
+  color: rgba(184, 181, 181, 0.557);
+  text-decoration: none;
+  font-size: 1em;
+}
+.a_link_dev:hover {
+  color: #ffc9ff;
+}
+.a_link:hover {
+  color: #ffc9ff;
+}
+.h3_header {
+  color: rgba(184, 181, 181, 0.557);
+  font-size: 1.3em;
+}
+.version_date {
+  color: rgb(184, 223, 255);
+  font-size: 0.85em;
+}
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+h1 {
+  color: #ffffff;
+  padding: 0;
+}
+
+h1 {
+  color: #ffffff;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: -0.3%;
+  font-size: 1.4em;
+  @media screen and (max-width: 800px) {
+    text-align: center;
+    align-self: center;
+    font-size: 1.2em;
+  }
+}
+p {
+  color: #ffffff;
+}
+.changelog {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+hr {
+  color: rgb(233, 179, 234);
+}
+
+a {
+  margin-right: 10px; // Adjust the spacing as needed
+  margin-bottom: 1px;
+}
+
+img {
+  max-height: 20px; // Adjust the size as needed
+
+  margin-bottom: -3px;
+}
+.svg_git {
+  max-height: 20px; // Adjust the size as needed
+
+  margin-bottom: -3px;
+}
+.svg_sidebar {
+  max-height: 20px; // Adjust the size as needed;
+}
+
+img:hover {
+  opacity: 0.7;
+  color: #ffc9ff;
+}
+.hr_divider {
+  color: rgba(87, 68, 87, 0.598);
+}
+.version {
+  margin-bottom: 20px;
+}
+.version h2 {
+  color: #ffc9ff;
+}
+.version ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.version ul li {
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 50px 0;
+  margin-right: 50px 0;
+}
+a {
+  color: #ffffff;
+  padding: 0;
+}
+.accordion {
+  background-color: #333;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 0.75em;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #575757;
+  padding: 15px;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #1f1f1f;
+  overflow: hidden;
+}
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center; /* Center the links */
+}
+.sidebar ul li {
+  padding: 10px;
+}
+.sidebar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 0.85em;
+}
+.sidebar ul li a:hover {
+  background-color: #575757;
+  padding: 0.5em;
+}
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  padding-top: 20px;
+  overflow-y: scroll;
+  transition: transform 0.3s ease;
+  transform: translateX(0);
+  list-style-type: none;
+}
+@media screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+    margin: 0;
+  }
+}
+.sidebar-icon {
+  position: absolute;
+  left: 200px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #ffffff;
+}
+#sidebar-toggle {
+  display: none;
+}
+#sidebar-toggle:not(:checked) + .sidebar-icon + .sidebar {
+  transform: translateX(-100%);
+}
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+.sidebar ul li {
+  text-align: center;
+}
+.sidebar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+.sidebar ul li a:hover {
+  background-color: #575757;
+}
+body {
+  margin-left: 200px; /* Adjust this value if needed */
+}
+@media screen and (max-width: 600px) {
+  body {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+#sidebar-toggle:not(:checked) ~ body {
+  margin-left: 0;
+}

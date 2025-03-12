@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --hover-active-colour: #f2c7e2;
+  --svg-fill-colour: #fff;
+  --sorce-code-svg-fill-colour: hsl(214, 7%, 47%);
+  --body-bg-colour: #121212;
+  --nav-footer-bg-colour: #131418;
+  --nav-text-colour: #f2f5f7;
+  --card-bg-colour: #262626;
+  --card-title-span-colour: rgb(255, 251, 251);
+  --card-box-shadow-colour: rgba(139, 138, 138, 0.2);
+  --card-box-shadow-hover-colour: #f2c7e2;
+  --top-border-colour: #f2c7e20a;
+  --header-border-colour: hsla(321, 75%, 81%, 0.514);
+  --footer-link-colour: rgb(110, 110, 110);
+  --blog-span-hr-colour: rgba(105, 105, 105, 0.26);
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--body-bg-colour);
+  color: var(--nav-text-colour);
+}
+
+.changelog_h1 {
+  padding-top: 1em;
+  margin: auto;
+  text-align: center;
+  font-size: 1.25em;
+  color: var(--nav-text-colour);
+}
+@media screen and (max-width: 1000px) {
+  .changelog_h1 {
+    padding-top: 1em;
+    font-size: 1.25em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+.changelog_p {
+  margin: auto;
+  text-align: center;
+  font-size: 1em;
+  color: var(--nav-text-colour);
+}
+@media screen and (max-width: 1000px) {
+  .changelog_p {
+    font-size: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+.header_hr {
+  border-top: 1px solid var(--header-border-colour);
+  width: 95%;
+  margin-left: 3em;
+}
+
+.div_hr {
+  border: 0.2px solid rgba(138, 84, 139, 0.5215686275);
+  width: 50%;
+  margin-left: 35em;
+  margin-top: 1em;
+}
+
+.div_hr_2 {
+  border: 0.2px solid rgba(61, 51, 102, 0);
+  width: 70%;
+  margin-left: 20em;
+  margin-top: 2em;
+}
+
+.div_hr_3 {
+  border: 0.2px solid rgba(77, 51, 102, 0.3098039216);
+  width: 50%;
+  margin-left: 35em;
+  margin-top: 1em;
+}
+
+.div_hr_4 {
+  border: 0.2px solid rgba(77, 51, 102, 0.3098039216);
+  width: 50%;
+  margin-left: 35em;
+  margin-top: 2.5em;
+}
+
+div {
+  margin-top: -4em;
+  display: block;
+}
+@media screen and (max-width: 800px) {
+  div {
+    margin-left: -10%;
+  }
+}
+
+.div_2 {
+  margin-top: -12.5em;
+  display: block;
+}
+@media screen and (max-width: 800px) {
+  .div_2 {
+    margin-left: -10%;
+  }
+}
+
+.div_3 {
+  margin-top: -4.5em;
+  display: block;
+}
+@media screen and (max-width: 800px) {
+  .div_3 {
+    margin-left: -10%;
+  }
+}
+
+.div_4 {
+  margin-top: -11.5em;
+  display: block;
+}
+@media screen and (max-width: 800px) {
+  .div_4 {
+    margin-left: -10%;
+  }
+}
+
+.div_5 {
+  margin-top: -6em;
+  display: block;
+}
+@media screen and (max-width: 800px) {
+  .div_5 {
+    margin-left: -10%;
+    margin-top: 1em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mobile {
+    display: flex;
+    margin-top: 0.5em;
+    padding-top: 5em;
+  }
+}
+
+.div_6 {
+  margin-top: -13em;
+  display: block;
+}
+@media screen and (max-width: 800px) {
+  .div_6 {
+    margin-left: -10%;
+  }
+}
+
+.div_7 {
+  margin-top: -6em;
+  margin-bottom: 2.5em;
+  display: block;
+}
+@media screen and (max-width: 800px) {
+  .div_7 {
+    margin-left: -10%;
+  }
+}
+
+h2,
+p {
+  margin-left: 30%;
+}
+@media screen and (max-width: 800px) {
+  h2,
+  p {
+    margin-left: 10%;
+  }
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #ffc9ff;
+  margin-top: 1em;
+}
+
+.h2_2 {
+  font-size: 1.15em;
+  color: var(--footer-link-colour);
+  margin-top: 1em;
+}
+
+p {
+  font-size: 0.8em;
+}
+
+ul,
+li {
+  margin-left: 21.5%;
+}
+
+h3 {
+  margin-left: 36.5%;
+  margin-top: 0.75em;
+  font-size: 0.95em;
+}
+
+.removed {
+  color: rgb(255, 181, 181);
+}
+
+.added {
+  color: rgb(181, 255, 181);
+}
+
+.fixed {
+  color: rgb(255, 235, 181);
+}
+
+.amended {
+  color: rgb(229, 255, 181);
+}
+
+.issues {
+  color: rgb(255, 181, 233);
+}
+
+.renamed {
+  color: rgb(209, 181, 255);
+}
+
+.issues_rc1 {
+  color: rgb(255, 181, 233);
+  font-size: 0.9em;
+}
+
+ul {
+  margin-top: 0.5em;
+}
+
+.header_date_a {
+  margin-left: 30%;
+  font-size: 0.85em;
+  display: block;
+  color: rgba(255, 255, 255, 0.5568627451);
+}
+@media screen and (max-width: 800px) {
+  .header_date_a {
+    margin-left: 10%;
+  }
+}
+
+a {
+  color: var(--nav-text-colour);
+}
+a:hover {
+  color: var(--hover-active-colour);
+}
+
+.known_li {
+  font-size: 0.8em;
+}/*# sourceMappingURL=main.old.css.map */
